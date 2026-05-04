@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>GYM WEBSITE</title>
+  <style>
+body{
+ margin: 0;
+ margin-top: 120px;
+ background-color: rgb(24, 51, 82);
+
+}
+.hud{
+ background-color: rgb(24, 51, 82);
+padding-bottom: 30px;
+}
+
+
+.header{
+position: fixed;
+top: 0;
+right: 0;
+left: 0;
+background-color: black;
+height: 100px;
+display: flex;
+flex-shrink: 0;
+justify-content: space-between;
+padding:  0 15%;
+box-sizing: border-box;
+
+ }
+.left-section{
+  flex-shrink: 0
+
+}
+.middle-section{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+  align-items: center;
+
+
+}
+.right-section{
+display: flex;
+align-items: center;
+flex-shrink: 0;
+
+}
+.buisness{
+  width: 150px;
+  
+}
+.home,.about,.packages,.contact{
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.shopping-bag{
+  color: white;
+  font-size: 20px;
+}
+.bag{
+  margin-right: 5px;
+}
+.menu{
+  width: 40px;
+  
+  
+  
+}
+@media(max-width: 1000px){
+  .home,.about,.packages,.contact{
+   display: none;
+
+  } 
+  .header{
+    padding: 0 20px;
+    align-items: center;
+  }
+ .menu-button{
+  display: block;
+
+ }
+ .middle-section{
+  width: auto;
+ }
+ .right-section{
+  display: none;
+ }
+}
+.menu-button{
+  background-color: transparent;
+  border: none;
+  display: none;
+  
+}
+.content{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 35px;
+}
+.achieve{
+  color: white;
+  font-size: 60px;
+  font-weight: bold;
+  width: 1200px;
+  margin: 0;
+  font-family: arial;
+}
+.moto{
+  display: flex;
+  justify-content: center;
+  margin-top: 0;
+  margin-bottom: 10;
+}
+.deadlifting{
+  display: flex;
+  justify-self: center;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+.main,.deadlift{
+  height: auto;
+}
+.fitness{
+  font-family: arial;
+  color: black;
+  font-size: 30px;
+  width: 350px;
+  margin-bottom: 2px;
+  font-weight: bold;
+}
+.experience{
+  color: rgb(56, 56, 56);
+  width: 460px;
+  margin-top: 0;
+  font-size: 20px;
+}
+.down-content{
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 580px;
+
+}
+.intro{
+  margin-left: 100px;
+}
+.start{
+  color: white;
+  font-size: 30px;
+  font-weight: bold;
+  font-family: arial;
+  width: 900px;
+}
+.race{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 340px;
+  background-color: rgb(13, 27, 43);
+  text-align: center;
+}
+
+img {
+  display: block;
+  height: auto;
+}
+.whatsapp-float {
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  bottom: 40px;
+  right: 40px;
+  background-color: #25d366;
+  color: #FFF;
+  border-radius: 50px;
+  text-align: center;
+  font-size: 30px;
+  box-shadow: 2px 2px 3px #999;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.whatsapp-float:hover {
+  background-color: #128C7E;
+}
+
+  </style>
+</head>
+<body>
+<div class="hud">
+<div class="header">
+<div class="left-section"><img class="buisness" src="buisness_logo.png">
+</div>
+<div class="middle-section">
+<a href="home.html"  class="home">Home</a>
+<a href="about.html" class="about">About</a>
+<a href="packages" class="packages">Packages</a>
+<a href="contact.html" class="contact">Contact</a>
+<button class="menu-button"><img class="menu" src="menu.png"></button>
+
+
+</div>
+<div class="right-section"><img class="bag"  src="bag.png">  <p class="shopping-bag">Shopping bag</p></div>
+
+
+
+</div>
+
+
+<div class="content"><img class="main" src="MAIN.png"></div>
+<div class="moto" ><p class="achieve">Achieve Your Fitness Goals with a Highly Regarded Personal Trainer in San Diego..</p></div>
+
+<div class="deadlifting"><img class="deadlift" src="deadlifting.png"></div>
+</div>
+
+
+<div class="down-content">
+<div><img src="girl.png"></div>
+<div class="intro">
+  <p class="fitness">Achieve Your Fitness Goals with Advantage Fitness Training</p>
+<p class="experience">Experience the Advantage Fitness difference with our holistic approach to fitness. Our personalized training integrates mobility, strength, nutrition, and mindset training to help you achieve your fitness goals. With a focus on safety, progress, and accountability, we provide 1-on-1 or semi-private sessions tailored to your needs.</p>
+</div>
+</div>
+
+
+<div class="account">
+  <img src="main-content.png">
+</div>
+<div>
+  <img src="party-content.png">
+</div>
+<div>
+  <img src="fitness.png">
+</div>
+
+
+<div class="race">
+  <p class="start">Start your fitness journey today and embark on a rewarding path to a healthier you!</p>
+</div>
+<div class="form">
+  <img src="FORM.png">
+</div>
+<div class="advantage">
+  <img src="advantagefitnesstraining.com_.png">
+</div>
+<a href="https://wa.me/8923699401 " class="whatsapp-float" target="_blank">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="60" height="60">
+</a>
+</body>
+
+
+</html>
