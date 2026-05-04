@@ -1,0 +1,85 @@
+/* Mobile-first responsive stylesheet for website.html */
+:root{
+  --bg: rgb(24,51,82);
+  --dark: rgb(13,27,43);
+}
+*{box-sizing: border-box}
+html,body{height:100%}
+body{
+  margin: 0;
+  margin-top: 120px;
+  background-color: var(--bg);
+  font-family: Arial, Helvetica, sans-serif;
+  color: #fff;
+}
+.hud{background-color: var(--bg); padding-bottom: 30px}
+.header{
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  background-color: #000;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15%;
+  z-index: 50;
+}
+.left-section{flex-shrink: 0}
+.buisness{width: 150px; display:block}
+.middle-section{display:flex; gap:18px; align-items:center}
+.middle-section a{color: #fff; font-size:20px; text-decoration:none}
+.right-section{display:flex; align-items:center; gap:8px}
+.shopping-bag{color:#fff; font-size:20px; margin:0}
+.bag{margin-right:5px}
+
+.content{display:flex; justify-content:center; margin-bottom:35px}
+.content img.main{max-width:1200px; width:90%; height:auto}
+
+.moto{display:flex; justify-content:center; margin-top:0; margin-bottom:10}
+.achieve{color:#fff; font-weight:bold; width:90%; margin:0; font-size:36px}
+
+.deadlifting{display:flex; justify-content:center; margin-top:60px; margin-bottom:20px}
+.deadlift{max-width:90%; height:auto}
+
+.fitness{color:#000; font-size:22px; width:100%; margin-bottom:8px; font-weight:bold}
+.experience{color: rgb(56,56,56); width:100%; font-size:16px}
+
+.down-content{background-color:#fff; display:flex; flex-direction:column; align-items:center; gap:20px; width:100%; padding:24px}
+.intro{max-width:900px; display:flex; flex-direction:column; justify-content:center}
+.start{color:#fff; font-size:20px; font-weight:bold; width:100%}
+.race{display:flex; justify-content:center; align-items:center; background-color: var(--dark); text-align:center; padding:24px}
+
+img{display:block; max-width:100%; height:auto}
+
+.whatsapp-float{position:fixed; width:60px; height:60px; bottom:40px; right:40px; background-color:#25d366; color:#FFF; border-radius:50px; text-align:center; font-size:30px; box-shadow:2px 2px 3px #999; z-index:100; display:flex; align-items:center; justify-content:center}
+.whatsapp-float:hover{background-color:#128C7E}
+
+/* Larger screens (tablets / small laptops) */
+@media (min-width: 700px){
+  .down-content{flex-direction:row; align-items:center; height:580px; padding:40px}
+  .fitness{font-size:30px; width:350px}
+  .experience{width:50%; font-size:20px}
+  .achieve{font-size:48px}
+}
+
+/* Desktop / wide screens */
+@media (min-width: 1000px){
+  body{margin-top:120px}
+  .header{padding:0 15%; height:100px}
+  .middle-section{width:400px}
+  .home,.about,.packages,.contact{display:inline-block}
+  .right-section{display:flex}
+  .achieve{font-size:60px; width:70%}
+}
+
+/* Small screens adjustments */
+@media (max-width: 600px){
+  body{margin-top:90px}
+  .header{padding:0 14px; height:70px}
+  .buisness{width:110px}
+  .middle-section{display:none}
+  .right-section{display:none}
+  .achieve{font-size:28px}
+  .down-content{padding:16px}
+  .deadlifting{margin-top:24px}
+}
