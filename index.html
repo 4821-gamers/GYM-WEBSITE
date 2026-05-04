@@ -2,7 +2,6 @@
 <html>
 <head>
 <title>GYM WEBSITE</title>
- <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
 body{
  margin: 0;
@@ -66,12 +65,7 @@ flex-shrink: 0;
 .bag{
   margin-right: 5px;
 }
-.menu{
-  width: 40px;
-  
-  
-  
-}
+
 @media(max-width: 1000px){
   .home,.about,.packages,.contact{
    display: none;
@@ -81,10 +75,7 @@ flex-shrink: 0;
     padding: 0 20px;
     align-items: center;
   }
- .menu-button{
-  display: block;
 
- }
  .middle-section{
   width: auto;
  }
@@ -92,12 +83,9 @@ flex-shrink: 0;
   display: none;
  }
 }
-.menu-button{
-  background-color: transparent;
-  border: none;
-  display: none;
+
   
-}
+
 .content{
   display: flex;
   justify-content: center;
@@ -107,7 +95,7 @@ flex-shrink: 0;
   color: white;
   font-size: 60px;
   font-weight: bold;
-  width: 1200px;
+  width: 70%;
   margin: 0;
   font-family: arial;
 }
@@ -136,9 +124,10 @@ flex-shrink: 0;
 }
 .experience{
   color: rgb(56, 56, 56);
-  width: 460px;
+  width: 50%;
   margin-top: 0;
   font-size: 20px;
+  display: inline-block;
 }
 .down-content{
   background-color: white;
@@ -147,10 +136,15 @@ flex-shrink: 0;
   justify-content: center;
   align-items: center;
   height: 580px;
-
+  width: 100%;
+  gap: 40px; 
+  
 }
 .intro{
-  margin-left: 100px;
+max-width: 900px;     /* Text ko failne se rokne ke liye */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .start{
   color: white;
@@ -206,7 +200,6 @@ img {
 <a href="about.html" class="about">About</a>
 <a href="packages" class="packages">Packages</a>
 <a href="contact.html" class="contact">Contact</a>
-<button class="menu-button"><img class="menu" src="menu.png"></button>
 
 
 </div>
@@ -253,7 +246,7 @@ img {
 <div class="advantage">
   <img src="advantagefitnesstraining.com_.png">
 </div>
-<a href="https://wa.me/8923699401 " class="whatsapp-float" target="_blank">
+<a href="https://wa.me/919259225424" class="whatsapp-float" target="_blank" rel="noopener noreferrer">
   <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp" width="60" height="60">
 </a>
 </body>
